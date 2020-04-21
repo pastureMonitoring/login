@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/bootstrap/js/jquery.js"></script>
+    <script src="/bootstrap/js/jquery.backstretch.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/font-awesome.css">
+    <link rel="stylesheet" href="/bootstrap/css/login.css">
+    <link rel="stylesheet" href="/bootstrap/css/login-soft.css">
+    <link rel="stylesheet" href="/bootstrap/css/style.css">
+    <script>
+        jQuery(document).ready(function() {
+            $.backstretch([
+                    "./image/1.jpg",
+                    "./image/2.jpg",
+                    "./image/3.jpg",
+                    "./image/4.jpg"
+                ], {
+                    fade: 1000,
+                    duration: 8000
+                }
+            );
+        });
+    </script>
+
+
+
+</head>
+<body class="login">
+<!-- BEGIN LOGO -->
+<div class="logo">
+    <a href="index.html">
+        <img src="../../assets/admin/layout3/img/logo-big.png" alt=""/>
+    </a>
+</div>
+<!-- END LOGO -->
+<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+<div class="menu-toggler sidebar-toggler">
+</div>
+<!-- END SIDEBAR TOGGLER BUTTON -->
+<!-- BEGIN LOGIN -->
+<div class="content" style="width: 500px">
+    <!-- BEGIN LOGIN FORM -->
+    <form class="login-form" action="loginform" method="post" style="border: 1px solid;padding: 10px 10px 10px 10px;background: currentColor;width: 400px;opacity: 0.8">
+        <h3 class="form-title">Login to your account</h3>
+        <div class="form-group">
+            <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+            <label class="control-label visible-ie8 visible-ie9">Username</label>
+            <div class="input-icon">
+
+                <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="username"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label visible-ie8 visible-ie9">Password</label>
+            <div class="input-icon">
+                <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password"/>
+            </div>
+        </div>
+        <div class="form-actions">
+
+            <button type="submit" class="btn blue pull-right">
+                Login <i class="m-icon-swapright m-icon-white"></i>
+            </button>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>
